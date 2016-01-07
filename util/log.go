@@ -18,7 +18,8 @@ func NewLogger(name string) (logger *logrus.Logger) {
 }
 
 func GetBasePath() string {
+	// @todo small hack
 	dir, _ := os.Getwd()
-	split := strings.Split(dir, "bountyHunter")
-	return split[0] + "/bountyHunter"
+	split := strings.Split(dir, "gotrade")
+	return split[0] + "/gotrade"
 }
